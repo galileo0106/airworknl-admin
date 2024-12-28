@@ -22,7 +22,7 @@ import { LOGOUT } from "../redux/actionTypes";
 import { enqueueSnackbar } from "notistack";
 import { useAuth } from "../hooks/useAuth";
 import { useNavigate } from "react-router-dom";
-import logo from "../assets/img/logo.webp";
+import logo from "../assets/img/logo.png";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import { socket } from "../apis/socket";
 import { getNotificationCounts } from "../redux/actions/commonActions";

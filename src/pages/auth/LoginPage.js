@@ -7,7 +7,7 @@ import { apis } from "../../apis";
 import PasswordField from "../../components/PasswordField";
 import { useAuth } from "../../hooks/useAuth";
 import { LoadingButton } from "@mui/lab";
-import logo from "../../assets/img/logo.webp";
+import logo from "../../assets/img/logo.png";
 
 const LoginPage = () => {
   const location = useLocation();
