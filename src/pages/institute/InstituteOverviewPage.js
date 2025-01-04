@@ -66,6 +66,12 @@ const InstituteOverviewPage = ({ institute }) => {
               ))}
             </Stack>
           </Stack>
+          <Stack direction="row" spacing={0.5} alignItems="flex-start">
+            <Typography variant="body2" fontWeight={600} minWidth={120}>
+              Community:
+            </Typography>
+            <Typography variant="body2">{institute.community}</Typography>
+          </Stack>
           <Stack direction="row" spacing={0.5} alignItems="center">
             <Typography variant="body2" fontWeight={600} minWidth={120}>
               Rating:

@@ -67,6 +67,7 @@ const EditInstitutePage = () => {
         description: "",
       },
       slug: "",
+      community: "",
     },
   });
   const getComponentValue = (components, type) => {
@@ -151,6 +152,7 @@ const EditInstitutePage = () => {
               country,
               metadata,
               slug,
+              community
             },
           },
         } = await apis.getInstituteById(id);
@@ -171,6 +173,7 @@ const EditInstitutePage = () => {
         setValue("country", JSON.parse(country));
         setValue("metadata", JSON.parse(metadata));
         setValue("slug", slug || "");
+        setValue("community", community)
 
         const {
           data: { institute_types: _institute_types },
@@ -374,6 +377,18 @@ const EditInstitutePage = () => {
                       Add email
                     </Button>
                   </Stack>
+                  <TextField
+                    label="Community"
+                    helperText={errors.community?.message}
+                    placeholder="https://example.com"
+                    error={!!errors.community}
+                    {...register("community", {
+                      pattern: {
+                        value: /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/i,
+                        message: "Invalid community url",
+                      },
+                    })}
+                  />
                   <Box
                     display="flex"
                     gap={1}

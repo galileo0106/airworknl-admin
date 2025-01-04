@@ -65,6 +65,7 @@ const CreateInstitutePage = () => {
         description: "",
       },
       slug: "",
+      community: "",
     },
   });
   const getComponentValue = (components, type) => {
@@ -136,7 +137,7 @@ const CreateInstitutePage = () => {
           data: { certificates },
         } = await apis.getCertificates();
         setCertificates(certificates);
-      } catch (error) {}
+      } catch (error) { }
     };
 
     init();
@@ -298,6 +299,18 @@ const CreateInstitutePage = () => {
                       Add email
                     </Button>
                   </Stack>
+                  <TextField
+                    label="Community"
+                    helperText={errors.community?.message}
+                    placeholder="https://example.com"
+                    error={!!errors.community}
+                    {...register("community", {
+                      pattern: {
+                        value: /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/i,
+                        message: "Invalid community url",
+                      },
+                    })}
+                  />
                   <Box
                     display="flex"
                     gap={1}
