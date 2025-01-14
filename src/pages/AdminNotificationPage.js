@@ -56,23 +56,20 @@ const AdminNotificationPage = () => {
         data: { notifications },
       } = await apis.getNotifications();
       setNotifications(notifications);
-    } catch (error) {}
+    } catch (error) { }
   };
   const handleViewMore = async (notification) => {
     switch (notification.type) {
       case "INSTITUTE_REVIEW":
         navigate(
-          `/institute/${JSON.parse(notification.content).post._id}/review/${
-            JSON.parse(notification.content)._id
+          `/institute/${JSON.parse(notification.content).post._id}/review/${JSON.parse(notification.content)._id
           }/edit`
         );
         break;
       case "EDUCATION_REVIEW":
         navigate(
-          `/institute/${
-            JSON.parse(notification.content).post.institute
-          }/education/${JSON.parse(notification.content).post._id}/review/${
-            JSON.parse(notification.content)._id
+          `/institute/${JSON.parse(notification.content).post.institute._id
+          }/education/${JSON.parse(notification.content).post._id}/review/${JSON.parse(notification.content)._id
           }/edit`
         );
         break;
@@ -132,11 +129,10 @@ const AdminNotificationPage = () => {
               <Box
                 key={`notification-${index}`}
                 p={2}
-                border={`1px solid ${
-                  notification.is_read
-                    ? theme.palette.divider
-                    : theme.palette.secondary.light
-                }`}
+                border={`1px solid ${notification.is_read
+                  ? theme.palette.divider
+                  : theme.palette.secondary.light
+                  }`}
                 borderRadius={1}
                 width="100%"
                 maxWidth={700}
