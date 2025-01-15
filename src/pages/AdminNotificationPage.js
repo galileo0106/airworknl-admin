@@ -68,10 +68,7 @@ const AdminNotificationPage = () => {
         break;
       case "EDUCATION_REVIEW":
         navigate(
-          `/institute/${JSON.parse(notification.content).post.institute._id
-          }/education/${JSON.parse(notification.content).post._id}/review/${JSON.parse(notification.content)._id
-          }/edit`
-        );
+          `/review/${JSON.parse(notification.content)._id}/edit`);
         break;
       case "PLATFORM_REVIEW":
         navigate(`/platform_review/${JSON.parse(notification.content)._id}/edit`);
