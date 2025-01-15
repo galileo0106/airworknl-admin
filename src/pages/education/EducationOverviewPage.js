@@ -20,7 +20,7 @@ const EducationOverviewPage = ({ education }) => {
             </Stack>
             <Stack direction="row" spacing={1}>
               <Typography variant="body2" fontWeight={600} minWidth={120}>
-                Deacription:
+                Description:
               </Typography>
               <QuillContent content={education?.description} />
             </Stack>
