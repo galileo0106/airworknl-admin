@@ -9,7 +9,7 @@ import { enqueueSnackbar } from "notistack";
 
 export const SERVER_URL =
   process.env.REACT_APP_BACKEND_URL || "http://127.0.0.1:5001";
-const axios = Axios.create({ baseURL: SERVER_URL, timeout: 100000 });
+const axios = Axios.create({ baseURL: SERVER_URL, timeout: 100000, maxBodyLength: Infinity, maxContentLength: Infinity });
 
 axios.interceptors.request.use((config) => {
   store.dispatch({ type: API_REQUEST, payload: true });
