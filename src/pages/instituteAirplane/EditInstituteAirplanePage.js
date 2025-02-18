@@ -23,6 +23,7 @@ import QuillContent from "../../components/QuillContent";
 import DragDropImages from "../../components/DragDropImages";
 import ReactQuill from "react-quill";
 import ImagePreview from "../../components/ImagePreview";
+import TextEditor from "../../components/TextEditor";
 
 const EditInstituteAirplanePage = () => {
   const [loaded, setLoaded] = useState(false);
@@ -306,7 +307,7 @@ const EditInstituteAirplanePage = () => {
                       name="description"
                       control={control}
                       render={({ field: { onChange, value } }) => (
-                        <ReactQuill
+                        <TextEditor
                           placeholder="Type description here"
                           theme="snow"
                           value={value}

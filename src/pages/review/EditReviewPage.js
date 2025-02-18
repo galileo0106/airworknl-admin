@@ -24,6 +24,7 @@ import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ReactQuill from "react-quill";
 import { DatePicker } from "@mui/x-date-pickers";
 import dayjs from "dayjs";
+import TextEditor from "../../components/TextEditor";
 
 const EditReviewPage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -265,7 +266,7 @@ const EditReviewPage = () => {
                         },
                       }}
                       render={({ field: { onChange, value } }) => (
-                        <ReactQuill
+                        <TextEditor
                           placeholder="Type comment here"
                           theme="snow"
                           value={value}

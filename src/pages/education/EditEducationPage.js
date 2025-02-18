@@ -24,6 +24,7 @@ import ImagePreview from "../../components/ImagePreview";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 import ReactQuill from "react-quill";
 import DragDropImages from "../../components/DragDropImages";
+import TextEditor from "../../components/TextEditor";
 
 const EditDepartmentPage = () => {
   const { institute_id, education_id } = useParams();
@@ -243,7 +244,7 @@ const EditDepartmentPage = () => {
                       name="description"
                       control={control}
                       render={({ field: { onChange, value } }) => (
-                        <ReactQuill
+                        <TextEditor
                           placeholder="Type description here"
                           theme="snow"
                           value={value}

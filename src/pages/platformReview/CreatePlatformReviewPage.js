@@ -24,6 +24,7 @@ import ReactQuill from "react-quill";
 import { DatePicker } from "@mui/x-date-pickers";
 import dayjs from "dayjs";
 import AvatarUpload from "../../components/AvatarUpload";
+import TextEditor from "../../components/TextEditor";
 
 const CreatePlatformReviewPage = () => {
   const navigate = useNavigate();
@@ -220,7 +221,7 @@ const CreatePlatformReviewPage = () => {
                       },
                     }}
                     render={({ field: { onChange, value } }) => (
-                      <ReactQuill
+                      <TextEditor
                         placeholder="Type comment here"
                         theme="snow"
                         value={value}

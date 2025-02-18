@@ -20,8 +20,8 @@ import { useEffect, useState } from "react";
 import { apis } from "../../apis";
 import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
 import CheckBoxIcon from "@mui/icons-material/CheckBox";
-import ReactQuill from "react-quill";
 import DragDropImages from "../../components/DragDropImages";
+import TextEditor from "../../components/TextEditor";
 
 const EditAirplanePage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -145,7 +145,7 @@ const EditAirplanePage = () => {
                     name="description"
                     control={control}
                     render={({ field: { onChange, value } }) => (
-                      <ReactQuill
+                      <TextEditor
                         placeholder="Type description here"
                         theme="snow"
                         value={value}

@@ -22,6 +22,7 @@ import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ImagePreview from "../../components/ImagePreview";
 import DragDropImages from "../../components/DragDropImages";
 import ReactQuill from "react-quill";
+import TextEditor from "../../components/TextEditor";
 
 const CreateInstituteSimulatorPage = () => {
   const { institute_id } = useParams();
@@ -234,7 +235,7 @@ const CreateInstituteSimulatorPage = () => {
                     name="description"
                     control={control}
                     render={({ field: { onChange, value } }) => (
-                      <ReactQuill
+                      <TextEditor
                         placeholder="Type description here"
                         theme="snow"
                         value={value}

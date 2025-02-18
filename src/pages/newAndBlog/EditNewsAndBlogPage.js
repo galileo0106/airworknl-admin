@@ -26,6 +26,7 @@ import ReactQuill from "react-quill";
 import DragDropImages from "../../components/DragDropImages";
 import dayjs from "dayjs";
 import { DatePicker } from "@mui/x-date-pickers";
+import TextEditor from "../../components/TextEditor";
 
 const EditNewsAndBlogPage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -150,7 +151,7 @@ const EditNewsAndBlogPage = () => {
                     name="content"
                     control={control}
                     render={({ field: { onChange, value } }) => (
-                      <ReactQuill
+                      <TextEditor
                         placeholder="Type content here"
                         theme="snow"
                         value={value}

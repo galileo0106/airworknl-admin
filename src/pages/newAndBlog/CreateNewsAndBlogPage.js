@@ -57,8 +57,9 @@ const CreateNewsAndBlogPage = () => {
   });
   const handleCreate = async (data) => {
     try {
+      console.log(data.content)
       data.metadata = JSON.stringify(data.metadata);
-      await apis.createNewsAndBlog(data);
+      // await apis.createNewsAndBlog(data);
       navigate(-1);
       reset();
     } catch (error) {

@@ -21,6 +21,7 @@ import { useEffect, useState } from "react";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ReactQuill from "react-quill";
 import { MuiTelInput, matchIsValidTel } from "mui-tel-input";
+import TextEditor from "../../components/TextEditor";
 
 const EditInfoRequestPage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -206,7 +207,7 @@ const EditInfoRequestPage = () => {
                       name="message"
                       control={control}
                       render={({ field: { onChange, value } }) => (
-                        <ReactQuill
+                        <TextEditor
                           placeholder="Type message here"
                           theme="snow"
                           value={value}

@@ -22,6 +22,7 @@ import { languages } from "../../constants/constants";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ReactQuill from "react-quill";
 import DragDropImages from "../../components/DragDropImages";
+import TextEditor from "../../components/TextEditor";
 
 const CreateEducationPage = () => {
   const { institute_id } = useParams();
@@ -195,7 +196,7 @@ const CreateEducationPage = () => {
                     name="description"
                     control={control}
                     render={({ field: { onChange, value } }) => (
-                      <ReactQuill
+                      <TextEditor
                         placeholder="Type description here"
                         theme="snow"
                         value={value}

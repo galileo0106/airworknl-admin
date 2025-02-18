@@ -27,6 +27,7 @@ import AddressAutocomplete from "mui-address-autocomplete";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ReactQuill from "react-quill";
 import DragDropImages from "../../components/DragDropImages";
+import TextEditor from "../../components/TextEditor";
 
 const CreateInstitutePage = () => {
   const [address, setAddress] = useState("");
@@ -178,7 +179,7 @@ const CreateInstitutePage = () => {
                       name="description"
                       control={control}
                       render={({ field: { onChange, value } }) => (
-                        <ReactQuill
+                        <TextEditor
                           placeholder="Type description here"
                           theme="snow"
                           value={value}

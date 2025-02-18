@@ -7,7 +7,7 @@ import ResizeModule from "@botom/quill-resize-module";
 // Register the resize module
 Quill.register("modules/resize", ResizeModule);
 
-const TextEditor = ({ value, onChange, placeholder }) => {
+const TextEditor = ({ value, onChange, placeholder, theme = "snow" }) => {
   const modules = {
     toolbar: {
       container: [
@@ -61,7 +61,7 @@ const TextEditor = ({ value, onChange, placeholder }) => {
       value={value}
       onChange={onChange}
       placeholder={placeholder}
-      theme="snow"
+      theme={theme}
     />
   );
 };

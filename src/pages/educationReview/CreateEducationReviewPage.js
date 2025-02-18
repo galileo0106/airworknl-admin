@@ -24,6 +24,7 @@ import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ReactQuill from "react-quill";
 import dayjs from "dayjs";
 import { DatePicker } from "@mui/x-date-pickers";
+import TextEditor from "../../components/TextEditor";
 
 const CreateEducationReviewPage = () => {
   const { education_id } = useParams();
@@ -222,7 +223,7 @@ const CreateEducationReviewPage = () => {
                       },
                     }}
                     render={({ field: { onChange, value } }) => (
-                      <ReactQuill
+                      <TextEditor
                         placeholder="Type comment here"
                         theme="snow"
                         value={value}

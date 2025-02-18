@@ -18,6 +18,7 @@ import CheckBoxIcon from "@mui/icons-material/CheckBox";
 import { useEffect, useState } from "react";
 import ReactQuill from "react-quill";
 import DragDropImages from "../../components/DragDropImages";
+import TextEditor from "../../components/TextEditor";
 
 const CreateSimulatorPage = () => {
   const [categories, setCategories] = useState([]);
@@ -102,7 +103,7 @@ const CreateSimulatorPage = () => {
                   name="description"
                   control={control}
                   render={({ field: { onChange, value } }) => (
-                    <ReactQuill
+                    <TextEditor
                       placeholder="Type description here"
                       theme="snow"
                       value={value}
