@@ -37,12 +37,12 @@
   }
 }
 
-.quillContent p, 
-.quillContent h1, 
-.quillContent h2, 
-.quillContent h3, 
-.quillContent h4, 
-.quillContent h5, 
+.quillContent p,
+.quillContent h1,
+.quillContent h2,
+.quillContent h3,
+.quillContent h4,
+.quillContent h5,
 .quillContent h6 {
-    margin: 0 0; /* Adjust as needed */
+  margin: 0 0; /* Adjust as needed */
 }

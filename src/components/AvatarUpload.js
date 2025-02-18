@@ -56,5 +56,4 @@ const AvatarUpload = ({ avatar, setValue }) => {
   );
 };
 
-
 export default AvatarUpload;

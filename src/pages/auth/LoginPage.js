@@ -42,7 +42,7 @@ const LoginPage = () => {
           onSubmit={handleSubmit(onSubmit)}
         >
           <Stack direction="column" alignItems="center" spacing={0}>
-            <Box  width={200}>
+            <Box width={200}>
               <img src={logo} alt="logo" width="100%" />
             </Box>
             <Typography variant="h4" sx={{ textAlign: "center" }}>

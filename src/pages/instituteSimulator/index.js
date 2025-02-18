@@ -64,7 +64,7 @@ const InstituteSimulatorPage = () => {
             <IconButton
               onClick={() => {
                 navigate(
-                  `/institute/${institute_id}/simulator/${params.id}/edit`
+                  `/institute/${institute_id}/simulator/${params.id}/edit`,
                 );
               }}
             >
@@ -73,7 +73,7 @@ const InstituteSimulatorPage = () => {
             <IconButton
               onClick={() => {
                 navigate(
-                  `/institute/${institute_id}/simulator/${params.id}/view?tab=overview`
+                  `/institute/${institute_id}/simulator/${params.id}/view?tab=overview`,
                 );
               }}
             >

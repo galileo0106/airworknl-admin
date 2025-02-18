@@ -101,10 +101,7 @@ const EditAdmissionSelectionPage = () => {
                         onChange(newValue);
                       }}
                       renderOption={(props, option, { selected }) => (
-                        <li
-                          {...props}
-                          style={{ height: 40 }}
-                        >
+                        <li {...props} style={{ height: 40 }}>
                           {option.name}
                         </li>
                       )}

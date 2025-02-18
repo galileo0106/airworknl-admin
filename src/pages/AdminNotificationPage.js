@@ -56,22 +56,24 @@ const AdminNotificationPage = () => {
         data: { notifications },
       } = await apis.getNotifications();
       setNotifications(notifications);
-    } catch (error) { }
+    } catch (error) {}
   };
   const handleViewMore = async (notification) => {
     switch (notification.type) {
       case "INSTITUTE_REVIEW":
         navigate(
-          `/institute/${JSON.parse(notification.content).post._id}/review/${JSON.parse(notification.content)._id
-          }/edit`
+          `/institute/${JSON.parse(notification.content).post._id}/review/${
+            JSON.parse(notification.content)._id
+          }/edit`,
         );
         break;
       case "EDUCATION_REVIEW":
-        navigate(
-          `/review/${JSON.parse(notification.content)._id}/edit`);
+        navigate(`/review/${JSON.parse(notification.content)._id}/edit`);
         break;
       case "PLATFORM_REVIEW":
-        navigate(`/platform_review/${JSON.parse(notification.content)._id}/edit`);
+        navigate(
+          `/platform_review/${JSON.parse(notification.content)._id}/edit`,
+        );
         break;
       case "INSTITUTE_INFO_REQUEST":
         navigate(`/info_request/${JSON.parse(notification.content)._id}/edit`);
@@ -126,10 +128,11 @@ const AdminNotificationPage = () => {
               <Box
                 key={`notification-${index}`}
                 p={2}
-                border={`1px solid ${notification.is_read
-                  ? theme.palette.divider
-                  : theme.palette.secondary.light
-                  }`}
+                border={`1px solid ${
+                  notification.is_read
+                    ? theme.palette.divider
+                    : theme.palette.secondary.light
+                }`}
                 borderRadius={1}
                 width="100%"
                 maxWidth={700}

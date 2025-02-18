@@ -76,7 +76,7 @@ const InfoRequestPage = () => {
     {
       field: "email_sent",
       headerName: "Email sent",
-      type: 'boolean'
+      type: "boolean",
     },
     {
       field: "actions",
@@ -410,7 +410,7 @@ const InfoRequestPage = () => {
                 navigate(
                   `/info_request/create?post_type=${
                     postType || "Institute"
-                  }&post_id=${postId || ""}`
+                  }&post_id=${postId || ""}`,
                 );
               }}
               startIcon={<AddIcon />}

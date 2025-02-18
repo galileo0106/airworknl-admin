@@ -192,7 +192,7 @@ const EditDepartmentPage = () => {
                         }}
                         renderOption={(props, option, { selected }) => {
                           const isSelected = watch("departments").some(
-                            (v) => v._id === option._id
+                            (v) => v._id === option._id,
                           );
                           return (
                             <li
@@ -201,7 +201,7 @@ const EditDepartmentPage = () => {
                                 var array = watch("departments");
                                 if (isSelected)
                                   array = watch("departments").filter(
-                                    (e) => e._id !== option._id
+                                    (e) => e._id !== option._id,
                                   );
                                 else array.push(option);
                                 setValue("departments", array);
@@ -271,7 +271,7 @@ const EditDepartmentPage = () => {
                         }}
                         renderOption={(props, option, { selected }) => {
                           const isSelected = watch("categories").some(
-                            (v) => v._id === option._id
+                            (v) => v._id === option._id,
                           );
                           return (
                             <li
@@ -280,7 +280,7 @@ const EditDepartmentPage = () => {
                                 var array = watch("categories");
                                 if (isSelected)
                                   array = watch("categories").filter(
-                                    (e) => e._id !== option._id
+                                    (e) => e._id !== option._id,
                                   );
                                 else array.push(option);
                                 setValue("categories", array);
@@ -330,7 +330,7 @@ const EditDepartmentPage = () => {
                         }}
                         renderOption={(props, option, { selected }) => {
                           const isSelected = watch("languages").some(
-                            (v) => v.code === option.code
+                            (v) => v.code === option.code,
                           );
                           return (
                             <li
@@ -339,7 +339,7 @@ const EditDepartmentPage = () => {
                                 var array = watch("languages");
                                 if (isSelected)
                                   array = watch("languages").filter(
-                                    (e) => e.code !== option.code
+                                    (e) => e.code !== option.code,
                                   );
                                 else array.push(option);
                                 setValue("languages", array);
@@ -390,7 +390,7 @@ const EditDepartmentPage = () => {
                         }}
                         renderOption={(props, option, { selected }) => {
                           const isSelected = watch("training_forms").some(
-                            (v) => v._id === option._id
+                            (v) => v._id === option._id,
                           );
                           return (
                             <li
@@ -399,7 +399,7 @@ const EditDepartmentPage = () => {
                                 var array = watch("training_forms");
                                 if (isSelected)
                                   array = watch("training_forms").filter(
-                                    (e) => e._id !== option._id
+                                    (e) => e._id !== option._id,
                                   );
                                 else array.push(option);
                                 setValue("training_forms", array);

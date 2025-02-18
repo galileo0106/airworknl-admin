@@ -38,7 +38,7 @@ const DragDropImages = ({ watch, setValue, imageType }) => {
     const items = reorder(
       images,
       result.source.index,
-      result.destination.index
+      result.destination.index,
     );
     setValue("images", items);
 

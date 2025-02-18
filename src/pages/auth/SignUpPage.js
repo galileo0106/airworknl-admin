@@ -43,13 +43,13 @@ const SignUpPage = () => {
         component="form"
       >
         <Stack direction="column" alignItems="center" spacing={0}>
-            <Box maxWidth={100}>
-              <img src={logo} alt="logo" width="100%" />
-            </Box>
-            <Typography variant="h4" sx={{ textAlign: "center" }}>
-              Welcome to Sign up!
-            </Typography>
-          </Stack>
+          <Box maxWidth={100}>
+            <img src={logo} alt="logo" width="100%" />
+          </Box>
+          <Typography variant="h4" sx={{ textAlign: "center" }}>
+            Welcome to Sign up!
+          </Typography>
+        </Stack>
         <TextField
           label="Email"
           helperText={errors.email && errors.email.message}

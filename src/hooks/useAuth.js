@@ -19,7 +19,7 @@ export const AuthProvider = ({ children }) => {
       login,
       logout,
     }), // eslint-disable-next-line
-    [token]
+    [token],
   );
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };

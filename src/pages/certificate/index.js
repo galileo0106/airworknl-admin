@@ -208,7 +208,6 @@ const CertificatePage = () => {
                 }}
                 rowSelectionModel={rowSelectionModel}
                 disableRowSelectionOnClick
-                
               />
             </Box>
           </Stack>

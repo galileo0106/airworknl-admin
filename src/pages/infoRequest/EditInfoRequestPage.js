@@ -87,7 +87,7 @@ const EditInfoRequestPage = () => {
         } = await apis.getInfoRequestTypes(
           `?type=${post_type}&post_id=${post._id}&premium=${
             post?.premium || ""
-          }`
+          }`,
         );
         setInfoRequestTypes(infoRequestTypes);
       } catch (error) {

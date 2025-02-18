@@ -161,10 +161,10 @@ const InstituteOverviewPage = ({ institute }) => {
                 loading="lazy"
                 width="20"
                 src={`https://flagcdn.com/w20/${JSON.parse(
-                  institute.country
+                  institute.country,
                 ).code.toLowerCase()}.png`}
                 srcSet={`https://flagcdn.com/w40/${JSON.parse(
-                  institute.country
+                  institute.country,
                 ).code.toLowerCase()}.png 2x`}
                 alt=""
               />

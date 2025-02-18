@@ -68,7 +68,7 @@ const EducationPage = () => {
             <IconButton
               onClick={() => {
                 navigate(
-                  `/institute/${institute_id}/education/${params.id}/edit`
+                  `/institute/${institute_id}/education/${params.id}/edit`,
                 );
               }}
             >
@@ -77,7 +77,7 @@ const EducationPage = () => {
             <IconButton
               onClick={() =>
                 navigate(
-                  `/institute/${institute_id}/education/${params.id}/view?tab=overview`
+                  `/institute/${institute_id}/education/${params.id}/view?tab=overview`,
                 )
               }
             >

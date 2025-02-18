@@ -5,10 +5,7 @@ import { darkTheme, lightTheme } from "../theme";
 const ThemeModeContext = createContext();
 
 export const ThemeModeProvider = ({ children }) => {
-  const [theme, setTheme] = useLocalStorage(
-    "theme",
-    "light"
-  );
+  const [theme, setTheme] = useLocalStorage("theme", "light");
 
   const setThemeMode = (e) => {
     setTheme(e);
@@ -19,7 +16,7 @@ export const ThemeModeProvider = ({ children }) => {
       theme,
       setThemeMode,
     }), // eslint-disable-next-line
-    [theme]
+    [theme],
   );
   return (
     <ThemeModeContext.Provider value={value}>

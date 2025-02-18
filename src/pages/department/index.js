@@ -72,7 +72,7 @@ const DepartmentPage = () => {
             <IconButton
               onClick={() => {
                 navigate(
-                  `/institute/${institute_id}/department/${params.id}/edit`
+                  `/institute/${institute_id}/department/${params.id}/edit`,
                 );
               }}
             >
@@ -149,7 +149,7 @@ const DepartmentPage = () => {
                   startIcon={<EditIcon />}
                   onClick={() => {
                     navigate(
-                      `/institute/${institute_id}/department/${selectedRow._id}/edit`
+                      `/institute/${institute_id}/department/${selectedRow._id}/edit`,
                     );
                   }}
                 >
@@ -253,10 +253,10 @@ const DepartmentPage = () => {
                       loading="lazy"
                       width="20"
                       src={`https://flagcdn.com/w20/${JSON.parse(
-                        selectedRow?.country
+                        selectedRow?.country,
                       ).code.toLowerCase()}.png`}
                       srcSet={`https://flagcdn.com/w40/${JSON.parse(
-                        selectedRow?.country
+                        selectedRow?.country,
                       ).code.toLowerCase()}.png 2x`}
                       alt=""
                     />

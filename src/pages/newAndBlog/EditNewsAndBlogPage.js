@@ -88,7 +88,7 @@ const EditNewsAndBlogPage = () => {
             },
           },
         } = await apis.getNewsAndBlogById(id);
-        console.log(content)
+        console.log(content);
         setValue("title", title);
         setValue("subtitle", subtitle);
         setValue("content", content);

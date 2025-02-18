@@ -150,7 +150,7 @@ const EditSimulatorPage = () => {
                       }}
                       renderOption={(props, option, { selected }) => {
                         const isSelected = watch("categories").some(
-                          (v) => v._id === option._id
+                          (v) => v._id === option._id,
                         );
                         return (
                           <li
@@ -159,7 +159,7 @@ const EditSimulatorPage = () => {
                               var array = watch("categories");
                               if (isSelected)
                                 array = watch("categories").filter(
-                                  (e) => e._id !== option._id
+                                  (e) => e._id !== option._id,
                                 );
                               else array.push(option);
                               setValue("categories", array);

@@ -261,7 +261,7 @@ const EditInstituteAirplanePage = () => {
                         }}
                         renderOption={(props, option, { selected }) => {
                           const isSelected = watch("departments").some(
-                            (v) => v._id === option._id
+                            (v) => v._id === option._id,
                           );
                           return (
                             <li
@@ -270,7 +270,7 @@ const EditInstituteAirplanePage = () => {
                                 var array = watch("departments");
                                 if (isSelected)
                                   array = watch("departments").filter(
-                                    (e) => e._id !== option._id
+                                    (e) => e._id !== option._id,
                                   );
                                 else array.push(option);
                                 setValue("departments", array);

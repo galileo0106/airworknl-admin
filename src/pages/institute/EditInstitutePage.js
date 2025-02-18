@@ -80,11 +80,11 @@ const EditInstitutePage = () => {
     const city = getComponentValue(addressComponents, "locality");
     const state = getComponentValue(
       addressComponents,
-      "administrative_area_level_1"
+      "administrative_area_level_1",
     );
     const postal_code = getComponentValue(addressComponents, "postal_code");
     const countryComponent = addressComponents?.find((component) =>
-      component.types.includes("country")
+      component.types.includes("country"),
     );
     let countryCode = "";
     if (countryComponent) {
@@ -152,7 +152,7 @@ const EditInstitutePage = () => {
               country,
               metadata,
               slug,
-              community
+              community,
             },
           },
         } = await apis.getInstituteById(id);
@@ -173,7 +173,7 @@ const EditInstitutePage = () => {
         setValue("country", JSON.parse(country));
         setValue("metadata", JSON.parse(metadata));
         setValue("slug", slug || "");
-        setValue("community", community)
+        setValue("community", community);
 
         const {
           data: { institute_types: _institute_types },
@@ -255,7 +255,7 @@ const EditInstitutePage = () => {
                         }}
                         renderOption={(props, option, { selected }) => {
                           const isSelected = watch("institute_types").some(
-                            (v) => v._id === option._id
+                            (v) => v._id === option._id,
                           );
                           return (
                             <li
@@ -264,7 +264,7 @@ const EditInstitutePage = () => {
                                 var array = watch("institute_types");
                                 if (isSelected)
                                   array = watch("institute_types").filter(
-                                    (e) => e._id !== option._id
+                                    (e) => e._id !== option._id,
                                   );
                                 else array.push(option);
                                 setValue("institute_types", array);
@@ -310,7 +310,7 @@ const EditInstitutePage = () => {
                         }}
                         renderOption={(props, option, { selected }) => {
                           const isSelected = watch("certificates").some(
-                            (v) => v._id === option._id
+                            (v) => v._id === option._id,
                           );
                           return (
                             <li
@@ -319,7 +319,7 @@ const EditInstitutePage = () => {
                                 var array = watch("certificates");
                                 if (isSelected)
                                   array = watch("certificates").filter(
-                                    (e) => e._id !== option._id
+                                    (e) => e._id !== option._id,
                                   );
                                 else array.push(option);
                                 setValue("certificates", array);
@@ -404,7 +404,7 @@ const EditInstitutePage = () => {
                             handleDeleteNotificationEmail(notification_email)
                           }
                         />
-                      )
+                      ),
                     )}
                   </Box>
                   <Stack direction="row" spacing={1}>

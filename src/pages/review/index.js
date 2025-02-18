@@ -113,7 +113,7 @@ const ReviewPage = () => {
               textAlign: "center", // To center the status text
               color: "white",
               minWidth: 100,
-              width: '100%'
+              width: "100%",
             }}
           >
             {params.value.toUpperCase()}

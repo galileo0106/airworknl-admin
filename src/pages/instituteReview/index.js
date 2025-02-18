@@ -201,7 +201,7 @@ const InstituteReviewPage = () => {
                   startIcon={<EditIcon />}
                   onClick={() => {
                     navigate(
-                      `/institute/${institute_id}/review/${selectedRow._id}/edit`
+                      `/institute/${institute_id}/review/${selectedRow._id}/edit`,
                     );
                   }}
                 >
@@ -270,7 +270,9 @@ const InstituteReviewPage = () => {
                   <Typography variant="body2" fontWeight={600} minWidth={120}>
                     Review date:
                   </Typography>
-                  <Typography variant="body2">{selectedRow?.review_date}</Typography>
+                  <Typography variant="body2">
+                    {selectedRow?.review_date}
+                  </Typography>
                 </Stack>
               </Stack>
             </Stack>

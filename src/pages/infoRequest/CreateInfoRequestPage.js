@@ -63,7 +63,7 @@ const CreateInfoRequestPage = () => {
         const {
           data: { infoRequestTypes },
         } = await apis.getInfoRequestTypes(
-          `?type=${postType}&post_id=${postId}`
+          `?type=${postType}&post_id=${postId}`,
         );
         setInfoRequestTypes(infoRequestTypes);
       } catch (error) {}

@@ -29,10 +29,7 @@ const EmailSentPage = () => {
           >
             Resend email
           </LoadingButton>
-          <Button
-            variant="outlined"
-            onClick={() => navigate(state.navigateTo)}
-          >
+          <Button variant="outlined" onClick={() => navigate(state.navigateTo)}>
             {state.btnLabel}
           </Button>
         </Stack>

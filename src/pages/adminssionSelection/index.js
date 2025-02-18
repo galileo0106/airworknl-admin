@@ -203,7 +203,6 @@ const AdminssionSelectionPage = () => {
                 }}
                 rowSelectionModel={rowSelectionModel}
                 disableRowSelectionOnClick
-                
               />
             </Box>
           </Stack>

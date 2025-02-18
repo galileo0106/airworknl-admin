@@ -125,9 +125,7 @@ const EducationReviewPage = () => {
             </IconButton>
             <IconButton
               onClick={() => {
-                navigate(
-                  `/review/${params.id}/edit`
-                );
+                navigate(`/review/${params.id}/edit`);
               }}
             >
               <EditIcon />
@@ -203,7 +201,7 @@ const EducationReviewPage = () => {
                   startIcon={<EditIcon />}
                   onClick={() => {
                     navigate(
-                      `/institute/${institute_id}/education/${education_id}/review/${selectedRow._id}/edit`
+                      `/institute/${institute_id}/education/${education_id}/review/${selectedRow._id}/edit`,
                     );
                   }}
                 >
@@ -320,7 +318,7 @@ const EducationReviewPage = () => {
               variant="contained"
               onClick={() =>
                 navigate(
-                  `/institute/${institute_id}/education/${education_id}/review/create`
+                  `/institute/${institute_id}/education/${education_id}/review/create`,
                 )
               }
               startIcon={<AddIcon />}

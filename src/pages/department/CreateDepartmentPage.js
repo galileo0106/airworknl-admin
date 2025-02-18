@@ -66,11 +66,11 @@ const CreateDepartmentPage = () => {
     const city = getComponentValue(addressComponents, "locality");
     const state = getComponentValue(
       addressComponents,
-      "administrative_area_level_1"
+      "administrative_area_level_1",
     );
     const postal_code = getComponentValue(addressComponents, "postal_code");
     const countryComponent = addressComponents?.find((component) =>
-      component.types.includes("country")
+      component.types.includes("country"),
     );
     let countryCode = "";
     if (countryComponent) {

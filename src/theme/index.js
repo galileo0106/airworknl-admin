@@ -12,7 +12,7 @@ export const lightTheme = createTheme({
   },
   typography: {
     fontFamily: "Montserrat",
-    fontSize: 12
+    fontSize: 12,
   },
   components: {
     MuiTextField: {

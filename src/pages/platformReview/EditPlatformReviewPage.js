@@ -48,7 +48,7 @@ const EditPlatformReviewPage = () => {
       status: "PENDING",
       type: "Institute",
       review_date: null,
-      avatar: ""
+      avatar: "",
     },
   });
 

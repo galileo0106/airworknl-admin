@@ -64,7 +64,7 @@ const InstituteAirplanePage = () => {
             <IconButton
               onClick={() => {
                 navigate(
-                  `/institute/${institute_id}/airplane/${params.id}/edit`
+                  `/institute/${institute_id}/airplane/${params.id}/edit`,
                 );
               }}
             >
@@ -73,7 +73,7 @@ const InstituteAirplanePage = () => {
             <IconButton
               onClick={() => {
                 navigate(
-                  `/institute/${institute_id}/airplane/${params.id}/view?tab=overview`
+                  `/institute/${institute_id}/airplane/${params.id}/view?tab=overview`,
                 );
               }}
             >

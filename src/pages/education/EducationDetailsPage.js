@@ -84,7 +84,7 @@ const EducationDetailsPage = () => {
     if (searchParams.get("tab")) setCurrentTab(searchParams.get("tab"));
     else {
       navigate(
-        `/institute/${institute_id}/education/${education_id}/view?tab=overview`
+        `/institute/${institute_id}/education/${education_id}/view?tab=overview`,
       );
     }
   }, [searchParams, institute_id, education_id]);
@@ -171,7 +171,7 @@ const EducationDetailsPage = () => {
                     startIcon={<EditIcon />}
                     onClick={() =>
                       navigate(
-                        `/institute/${institute_id}/education/${education_id}/edit`
+                        `/institute/${institute_id}/education/${education_id}/edit`,
                       )
                     }
                   >

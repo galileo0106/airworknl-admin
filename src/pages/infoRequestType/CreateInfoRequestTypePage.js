@@ -54,7 +54,6 @@ const CreateInfoRequestTypePage = () => {
 
   const handleCreate = async (data) => {
     try {
-
       await apis.createInfoRequestType(data);
       navigate(-1);
       reset();
@@ -174,7 +173,7 @@ const CreateInfoRequestTypePage = () => {
                   }}
                   renderOption={(props, option, { selected }) => {
                     const isSelected = watch("inactive_institutes").some(
-                      (v) => v._id === option._id
+                      (v) => v._id === option._id,
                     );
                     return (
                       <li
@@ -183,7 +182,7 @@ const CreateInfoRequestTypePage = () => {
                           var array = watch("inactive_institutes");
                           if (isSelected)
                             array = watch("inactive_institutes").filter(
-                              (e) => e._id !== option._id
+                              (e) => e._id !== option._id,
                             );
                           else array.push(option);
                           setValue("inactive_institutes", array);
@@ -221,7 +220,7 @@ const CreateInfoRequestTypePage = () => {
                   }}
                   renderOption={(props, option, { selected }) => {
                     const isSelected = watch("inactive_educations").some(
-                      (v) => v._id === option._id
+                      (v) => v._id === option._id,
                     );
                     return (
                       <li
@@ -230,7 +229,7 @@ const CreateInfoRequestTypePage = () => {
                           var array = watch("inactive_educations");
                           if (isSelected)
                             array = watch("inactive_educations").filter(
-                              (e) => e._id !== option._id
+                              (e) => e._id !== option._id,
                             );
                           else array.push(option);
                           setValue("inactive_educations", array);
@@ -268,7 +267,7 @@ const CreateInfoRequestTypePage = () => {
                   }}
                   renderOption={(props, option, { selected }) => {
                     const isSelected = watch("inactive_airplanes").some(
-                      (v) => v._id === option._id
+                      (v) => v._id === option._id,
                     );
                     return (
                       <li
@@ -277,7 +276,7 @@ const CreateInfoRequestTypePage = () => {
                           var array = watch("inactive_airplanes");
                           if (isSelected)
                             array = watch("inactive_airplanes").filter(
-                              (e) => e._id !== option._id
+                              (e) => e._id !== option._id,
                             );
                           else array.push(option);
                           setValue("inactive_airplanes", array);
@@ -315,7 +314,7 @@ const CreateInfoRequestTypePage = () => {
                   }}
                   renderOption={(props, option, { selected }) => {
                     const isSelected = watch("inactive_simulators").some(
-                      (v) => v._id === option._id
+                      (v) => v._id === option._id,
                     );
                     return (
                       <li
@@ -324,7 +323,7 @@ const CreateInfoRequestTypePage = () => {
                           var array = watch("inactive_simulators");
                           if (isSelected)
                             array = watch("inactive_simulators").filter(
-                              (e) => e._id !== option._id
+                              (e) => e._id !== option._id,
                             );
                           else array.push(option);
                           setValue("inactive_simulators", array);

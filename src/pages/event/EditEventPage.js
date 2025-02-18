@@ -30,7 +30,6 @@ const EditEventPage = () => {
   });
   const handleEdit = async (data) => {
     try {
-      
       await apis.updateAddress(id, data);
       navigate(-1);
       reset();

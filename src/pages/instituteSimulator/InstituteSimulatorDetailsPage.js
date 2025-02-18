@@ -81,7 +81,7 @@ const InstituteSimulatorDetailsPage = () => {
     if (searchParams.get("tab")) setCurrentTab(searchParams.get("tab"));
     else {
       navigate(
-        `/institute/${institute_id}/simulator/${institute_simulator_id}/view?tab=overview`
+        `/institute/${institute_id}/simulator/${institute_simulator_id}/view?tab=overview`,
       );
     }
   }, [searchParams, institute_id, institute_simulator_id]);
@@ -171,7 +171,7 @@ const InstituteSimulatorDetailsPage = () => {
                     startIcon={<EditIcon />}
                     onClick={() =>
                       navigate(
-                        `/institute/${institute_id}/simulator/${institute_simulator_id}/edit`
+                        `/institute/${institute_id}/simulator/${institute_simulator_id}/edit`,
                       )
                     }
                   >

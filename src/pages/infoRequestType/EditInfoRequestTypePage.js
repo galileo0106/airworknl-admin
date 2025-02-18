@@ -208,7 +208,7 @@ const EditInfoRequestTypePage = () => {
                     }}
                     renderOption={(props, option, { selected }) => {
                       const isSelected = watch("inactive_institutes").some(
-                        (v) => v._id === option._id
+                        (v) => v._id === option._id,
                       );
                       return (
                         <li
@@ -217,7 +217,7 @@ const EditInfoRequestTypePage = () => {
                             var array = watch("inactive_institutes");
                             if (isSelected)
                               array = watch("inactive_institutes").filter(
-                                (e) => e._id !== option._id
+                                (e) => e._id !== option._id,
                               );
                             else array.push(option);
                             setValue("inactive_institutes", array);
@@ -255,7 +255,7 @@ const EditInfoRequestTypePage = () => {
                     }}
                     renderOption={(props, option, { selected }) => {
                       const isSelected = watch("inactive_educations").some(
-                        (v) => v._id === option._id
+                        (v) => v._id === option._id,
                       );
                       return (
                         <li
@@ -264,7 +264,7 @@ const EditInfoRequestTypePage = () => {
                             var array = watch("inactive_educations");
                             if (isSelected)
                               array = watch("inactive_educations").filter(
-                                (e) => e._id !== option._id
+                                (e) => e._id !== option._id,
                               );
                             else array.push(option);
                             setValue("inactive_educations", array);
@@ -302,7 +302,7 @@ const EditInfoRequestTypePage = () => {
                     }}
                     renderOption={(props, option, { selected }) => {
                       const isSelected = watch("inactive_airplanes").some(
-                        (v) => v._id === option._id
+                        (v) => v._id === option._id,
                       );
                       return (
                         <li
@@ -311,7 +311,7 @@ const EditInfoRequestTypePage = () => {
                             var array = watch("inactive_airplanes");
                             if (isSelected)
                               array = watch("inactive_airplanes").filter(
-                                (e) => e._id !== option._id
+                                (e) => e._id !== option._id,
                               );
                             else array.push(option);
                             setValue("inactive_airplanes", array);
@@ -349,7 +349,7 @@ const EditInfoRequestTypePage = () => {
                     }}
                     renderOption={(props, option, { selected }) => {
                       const isSelected = watch("inactive_simulators").some(
-                        (v) => v._id === option._id
+                        (v) => v._id === option._id,
                       );
                       return (
                         <li
@@ -358,7 +358,7 @@ const EditInfoRequestTypePage = () => {
                             var array = watch("inactive_simulators");
                             if (isSelected)
                               array = watch("inactive_simulators").filter(
-                                (e) => e._id !== option._id
+                                (e) => e._id !== option._id,
                               );
                             else array.push(option);
                             setValue("inactive_simulators", array);
