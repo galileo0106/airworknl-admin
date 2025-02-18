@@ -22,10 +22,10 @@ import { apis } from "../../apis";
 import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
 import CheckBoxIcon from "@mui/icons-material/CheckBox";
 import { useEffect, useState } from "react";
-import ReactQuill from "react-quill";
 import DragDropImages from "../../components/DragDropImages";
 import dayjs from "dayjs";
 import { DatePicker } from "@mui/x-date-pickers";
+import TextEditor from "../../components/TextEditor";
 
 const CreateNewsAndBlogPage = () => {
   const [categories, setCategories] = useState([]);
@@ -115,7 +115,7 @@ const CreateNewsAndBlogPage = () => {
                   name="content"
                   control={control}
                   render={({ field: { onChange, value } }) => (
-                    <ReactQuill
+                    <TextEditor
                       placeholder="Type content here"
                       theme="snow"
                       value={value}
