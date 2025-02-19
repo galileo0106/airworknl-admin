@@ -22,7 +22,6 @@ import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ImagePreview from "../../components/ImagePreview";
 import QuillContent from "../../components/QuillContent";
 import DragDropImages from "../../components/DragDropImages";
-import ReactQuill from "react-quill";
 import TextEditor from "../../components/TextEditor";
 
 const CreateInstituteAirplanePage = () => {

@@ -22,7 +22,6 @@ import { languages } from "../../constants/constants";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ImagePreview from "../../components/ImagePreview";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
-import ReactQuill from "react-quill";
 import DragDropImages from "../../components/DragDropImages";
 import TextEditor from "../../components/TextEditor";
 

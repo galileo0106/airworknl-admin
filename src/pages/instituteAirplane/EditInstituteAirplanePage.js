@@ -21,7 +21,6 @@ import CheckBoxIcon from "@mui/icons-material/CheckBox";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import QuillContent from "../../components/QuillContent";
 import DragDropImages from "../../components/DragDropImages";
-import ReactQuill from "react-quill";
 import ImagePreview from "../../components/ImagePreview";
 import TextEditor from "../../components/TextEditor";
 

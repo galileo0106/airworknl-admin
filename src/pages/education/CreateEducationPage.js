@@ -20,7 +20,6 @@ import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
 import CheckBoxIcon from "@mui/icons-material/CheckBox";
 import { languages } from "../../constants/constants";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import ReactQuill from "react-quill";
 import DragDropImages from "../../components/DragDropImages";
 import TextEditor from "../../components/TextEditor";
 

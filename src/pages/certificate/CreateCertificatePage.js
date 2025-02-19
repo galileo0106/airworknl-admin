@@ -16,7 +16,6 @@ import { apis } from "../../apis";
 import { useEffect, useState } from "react";
 import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
 import CheckBoxIcon from "@mui/icons-material/CheckBox";
-import ReactQuill from "react-quill";
 import TextEditor from "../../components/TextEditor";
 
 const CreateCertificatePage = () => {

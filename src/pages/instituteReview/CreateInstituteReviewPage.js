@@ -18,10 +18,8 @@ import {
 import { Controller, useForm } from "react-hook-form";
 import { useNavigate, useParams } from "react-router-dom";
 import { apis } from "../../apis";
-import { useState } from "react";
 import { review_status, reviewer_types } from "../../constants/constants";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import ReactQuill from "react-quill";
 import { DatePicker } from "@mui/x-date-pickers";
 import dayjs from "dayjs";
 import TextEditor from "../../components/TextEditor";

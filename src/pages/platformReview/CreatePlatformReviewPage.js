@@ -20,7 +20,6 @@ import { useNavigate } from "react-router-dom";
 import { apis } from "../../apis";
 import { review_status, reviewer_types } from "../../constants/constants";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import ReactQuill from "react-quill";
 import { DatePicker } from "@mui/x-date-pickers";
 import dayjs from "dayjs";
 import AvatarUpload from "../../components/AvatarUpload";

@@ -19,7 +19,6 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import { apis } from "../../apis";
 import { useEffect, useState } from "react";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import ReactQuill from "react-quill";
 import { MuiTelInput, matchIsValidTel } from "mui-tel-input";
 import TextEditor from "../../components/TextEditor";
 

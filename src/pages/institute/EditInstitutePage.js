@@ -26,7 +26,6 @@ import dayjs from "dayjs";
 import { countries } from "../../constants/constants";
 import AddressAutocomplete from "mui-address-autocomplete";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import ReactQuill from "react-quill";
 import DragDropImages from "../../components/DragDropImages";
 import TextEditor from "../../components/TextEditor";
 

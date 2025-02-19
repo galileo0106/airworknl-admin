@@ -20,7 +20,6 @@ import { MuiTelInput } from "mui-tel-input";
 import AddressAutocomplete from "mui-address-autocomplete";
 import { countries } from "../../constants/constants";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import ReactQuill from "react-quill";
 import DragDropImages from "../../components/DragDropImages";
 import TextEditor from "../../components/TextEditor";
 
